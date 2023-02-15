@@ -1,0 +1,15 @@
+
+
+.side-header-div{
+    background: white;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    z-index: 5;
+}

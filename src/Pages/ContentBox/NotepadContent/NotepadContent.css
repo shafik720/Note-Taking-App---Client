@@ -1,5 +1,11 @@
 
 
+.notepad-div{
+    position: relative;
+    border: 2px solid blue;
+    height: 100%;
+}
+
 .add-button{
     display: flex;
     justify-content: center;
@@ -21,4 +27,13 @@
     font-weight: 700;
     font-size: 22px;
     color: #d1d3d7;
+}
+
+
+.sub-menu-div{
+    border: 2px solid ;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translateX(-50%);
 }

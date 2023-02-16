@@ -1,9 +1,8 @@
 
 
 .notepad-div{
-    position: relative;
-    border: 2px solid blue;
-    height: 100%;
+    /* position: relative; */
+    height: 90%;
 }
 
 .add-button{

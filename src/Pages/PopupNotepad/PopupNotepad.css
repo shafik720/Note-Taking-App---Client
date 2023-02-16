@@ -16,7 +16,56 @@
     left: 50%;
     transform: translate(-50%, -50%);
     padding: 10px 15px;
-    width: 80%;
+    width: 600px;
     height: 80%;
     border-radius: 10px;
+}
+
+.reactHookForm form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 10px;
+}
+.hookForm input, .hookForm textarea{
+    width: 100%;
+    margin: 0;
+    border: 2px solid rgb(180, 179, 179);
+    border-radius: 5px;
+    margin-top: 10px;
+    outline: none;
+    transition: all 0.2s ease-in-out;
+}
+.hookForm input:focus, .hookForm textarea:focus{
+    border: 2px solid #007ACC !important;
+}
+.note-title input{
+    height: 50px;
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.note-details textarea{
+    padding: 5px 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.hookForm p{
+    text-align: left !important;
+    font-weight: 600;
+    margin-bottom: 0;
+    font-size: 22px;
+}
+
+/* styling note submitt button */
+.note-submit-button{
+    height: 50px;
+    background: #007ACC;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    border: none !important;
+    outline: none !important;
 }

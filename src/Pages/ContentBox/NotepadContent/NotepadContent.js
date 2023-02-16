@@ -3,6 +3,11 @@ import addIcon from '../../../Utilities/img/plus.png';
 import './NotepadContent.css';
 
 const NotepadContent = () => {
+    const addNote = () =>{
+        
+        // opening popup display
+        document.querySelector('.popup-parent').classList.add('active');
+    }
     return (
         <div className='notepad-div'>
             <div className="add-button d-none">
@@ -10,7 +15,7 @@ const NotepadContent = () => {
                 <p>Add a Note</p>
             </div>
             <div className="sub-menu-div" draggable>
-                <div className="submenu-icon add-icon-sub">
+                <div onClick={addNote} className="submenu-icon add-icon-sub">
                     <img src={addIcon} alt="" />
                     <p>Add a Note</p>
                 </div>

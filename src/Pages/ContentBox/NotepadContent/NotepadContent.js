@@ -1,5 +1,5 @@
 import React from 'react';
-import addIcon from '../../../utilities/img/plus.png';
+import addIcon from '../../../Utilities/img/plus.png';
 import './NotepadContent.css';
 
 const NotepadContent = () => {

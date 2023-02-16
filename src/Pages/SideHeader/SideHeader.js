@@ -1,9 +1,9 @@
 import React from 'react';
 import './SideHeader.css';
-import noteLogo from '../../utilities/img/notes.png';
-import todoLogo from '../../utilities/img/to-do (1).png';
-import watchLogo from '../../utilities/img/stopwatch.png';
-import currencyLogo from '../../utilities/img/money-exchange.png';
+import noteLogo from '../../Utilities/img/notes.png';
+import todoLogo from '../../Utilities/img/to-do (1).png';
+import watchLogo from '../../Utilities/img/stopwatch.png';
+import currencyLogo from '../../Utilities/img/money-exchange.png';
 import { Button, OverlayTrigger, Tooltip } from 'react-bootstrap';
 
 const SideHeader = () => {

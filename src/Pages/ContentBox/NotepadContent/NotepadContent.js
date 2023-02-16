@@ -5,12 +5,15 @@ import './NotepadContent.css';
 const NotepadContent = () => {
     return (
         <div className='notepad-div'>
-            <div className="add-button">
+            <div className="add-button d-none">
                 <img src={addIcon} alt="" />
                 <p>Add a Note</p>
             </div>
-            <div className="sub-menu-div">
-                <h2>Add your menu here</h2>
+            <div className="sub-menu-div" draggable>
+                <div className="submenu-icon add-icon-sub">
+                    <img src={addIcon} alt="" />
+                    <p>Add a Note</p>
+                </div>
             </div>
         </div>
     );

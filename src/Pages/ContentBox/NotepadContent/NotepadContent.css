@@ -64,3 +64,22 @@
     text-align: center;
 }
 
+
+
+.note-display{
+    max-width: 300px;
+    border: 2px solid grey;
+    padding: 10px ;
+    min-height: 300px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.note-display h2{
+    font-size: 22px;
+    font-weight: 600;
+}
+.note-body{
+    text-align: justify;
+    margin-top: 15px;
+}

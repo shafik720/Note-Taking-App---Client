@@ -3,6 +3,7 @@ import './PopupNotepad.css';
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMultiply } from '@fortawesome/free-solid-svg-icons';
+import { addToDb } from '../../Utilities/LocalStorage/getDb';
 
 
 
@@ -10,6 +11,7 @@ const PopupNotepad = () => {
     const { register, reset, handleSubmit, watch, formState: { errors } } = useForm();
     const onSubmit = (data) => {
         console.log(data);
+        addToDb(data);
     };
 
     // closing 'Add Note' popup display

@@ -28,7 +28,7 @@
 }
 
 
-/* Profile submenu */
+/*----------------------------------------- Profile submenu */
 .profile-submenu{
     position: absolute;
     top: 40px;
@@ -41,7 +41,19 @@
     scale: 0;
     transition: all 0.2s ease-in-out;
     transform-origin: top right;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: auto;
 }
 .profile-submenu.active{
     scale: 1;
+}
+.profile-submenu span{
+    color:  #007ACC;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
 }

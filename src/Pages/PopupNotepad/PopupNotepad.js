@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import PopupForLogin from './PopupForLogin/PopupForLogin';
 import './PopupNotepad.css';
 
 import PopupOnlyNote from './PopupOnlyNote/PopupOnlyNote';
@@ -15,9 +14,7 @@ const PopupNotepad = () => {
                 <div className="notepad-content">
                     <PopupOnlyNote></PopupOnlyNote>
                 </div>
-                <div className="notepad-login">
-                    <PopupForLogin></PopupForLogin>
-                </div>
+
             </div>
         </div>
     );

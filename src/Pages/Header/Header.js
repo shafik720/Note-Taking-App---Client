@@ -7,10 +7,15 @@ const Header = () => {
     const openProfileMenu = () =>{
         document.querySelector('.profile-submenu').classList.add('active');
     }
+    document.body.addEventListener('click',(e)=>{
+        if(!e.target.classList.contains('profileIcon')){
+            document.querySelector('.profile-submenu').classList.remove('active');
+        }
+    })
     return (
         <div className="header-one-div">
             <div onClick={openProfileMenu} draggable className="profile-section">
-                <img src={profileLogo} alt="" />
+                <img className="profileIcon" src={profileLogo} alt="" />
 
                 <div className="profile-submenu">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore doloremque officiis assumenda repellat sunt? Aperiam magni sequi deleniti a possimus.</p>

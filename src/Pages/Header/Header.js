@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import profileLogo from '../../Utilities/img/profile.png'
-import { useNavigate } from 'react-router';
+import { useNavigate, useNavigation } from 'react-router';
 
 const Header = () => {
     // this function will open a popup menu when user click the profile icon on top right corner
@@ -15,9 +15,12 @@ const Header = () => {
         }
     })
 
-    
-    function jumpToLoginPage(){
-        document.querySelector('.popup-parent').classList.add('active', 'activeLogin');
+    const navigate = useNavigate();
+    function jumpToSignInPage(){
+        
+    }
+    function jumpToSignupPage(){
+        navigate('/signup');
     }
     
     return (
@@ -27,7 +30,7 @@ const Header = () => {
 
                 {/* ------------------------ profile sub menu starts here --------------------------- */}
                 <div className="profile-submenu">
-                    <p> <span onClick={jumpToLoginPage}>Login</span> / <span>Sign-Up</span></p>
+                    <p> <span onClick={jumpToSignInPage}>Login</span> / <span onClick={jumpToSignupPage}>Sign-Up</span></p>
                     
                 </div>
             </div>

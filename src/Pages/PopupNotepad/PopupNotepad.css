@@ -13,6 +13,14 @@
     display: block;
 }
 
+.notepad-content{
+    display: none;
+}
+.popup-parent.activeNotepad .notepad-content{
+    display: block;
+}
+
+
 .popup-modal{
     background: white;
     position: absolute;

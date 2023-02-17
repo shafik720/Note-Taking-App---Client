@@ -5,7 +5,7 @@ import './NotepadContent.css';
 const NotepadContent = () => {
     const addNote = () =>{
         // opening popup display
-        document.querySelector('.popup-parent').classList.add('active');
+        document.querySelector('.popup-parent').classList.add('active', 'activeNotepad');
     }
     return (
         <div className='notepad-div'>

@@ -13,10 +13,19 @@
     display: block;
 }
 
+/* ---------------------- 'Adding Note' component --------------------- */
 .notepad-content{
     display: none;
 }
 .popup-parent.activeNotepad .notepad-content{
+    display: block;
+}
+
+/* ---------------------- Login component --------------------- */
+.notepad-login{
+    display: none;
+}
+.popup-parent.activeLogin .notepad-login{
     display: block;
 }
 

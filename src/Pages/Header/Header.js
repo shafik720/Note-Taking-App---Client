@@ -15,9 +15,9 @@ const Header = () => {
         }
     })
 
-    const navigate = useNavigate();
+    
     function jumpToLoginPage(){
-        navigate('/login');
+        document.querySelector('.popup-parent').classList.add('active', 'activeLogin');
     }
     
     return (

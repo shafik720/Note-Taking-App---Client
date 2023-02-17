@@ -21,7 +21,27 @@
     border-radius: 50%;
     padding: 3px;
     cursor: pointer;
+    position: relative;
 }
 .profile-section img{
     width: 45px;
+}
+
+
+/* Profile submenu */
+.profile-submenu{
+    position: absolute;
+    top: 40px;
+    right: 55px;
+    background: white;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px 0px 5px 5px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    scale: 0;
+    transition: all 0.2s ease-in-out;
+    transform-origin: top right;
+}
+.profile-submenu.active{
+    scale: 1;
 }
